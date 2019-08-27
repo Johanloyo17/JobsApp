@@ -1,0 +1,86 @@
+//Home
+
+//Intro
+.intro {
+  position: relative;
+  top: -80px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./../assets/home-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+  }
+
+  &-caption {
+    position: relative;
+    z-index: 5;
+  }
+
+  &-title {
+    color: $--color-black;
+    font-size: 34px;
+    margin-bottom: 15px;
+  }
+}
+
+//Search
+.search {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 220px 150px 100px;
+  grid-gap: 10px;
+  background: #f6f6f6;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 2px;
+  max-width: 510px;
+}
+
+
+// How Work
+.how_cont{
+  display: flex;
+  justify-content: space-between;
+
+};
+
+.howcard{
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  justify-content: space-between;
+  
+  text-align: center;
+  
+  &_head{
+      display: flex;
+      flex-direction: column;
+      font-size: 1em;
+      align-items: center;
+      & i{
+          font-size: 3em;
+          padding: 10px 0
+      }; 
+      & h2{
+          font-size: 1.4em;
+          padding: 10px 0;
+          font-weight: 500
+          
+      }; 
+  };
+  &_text{
+      font-size: 1em;
+      font-weight: 400;
+  }
+}

@@ -1,0 +1,31 @@
+//Helpers
+.text-white {
+  color: $--color-white !important;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+.shadow{
+  box-shadow: 0 3px 6px rgba(80, 60, 60, 0.16);
+}
+
+.j-title{
+    font-size: 1.2em;
+    font-weight: 600;
+    &-lg{
+      font-size: 1.5em;
+    }
+}

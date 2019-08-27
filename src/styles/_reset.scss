@@ -1,0 +1,29 @@
+// Default
+html {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-ms-overflow-style: scrollbar;
+}
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Lato";
+	color: $--color-text-regular;
+	font-size: 16px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}

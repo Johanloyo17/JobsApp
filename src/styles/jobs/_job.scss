@@ -1,0 +1,83 @@
+//Job
+.job {
+  padding: 20px;
+	box-shadow: 0 3px 6px rgba(80, 60, 60, 0.16);
+	border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  grid-gap: 40px;
+  margin-bottom: 30px;
+	font-size: 14px;
+	position: relative;
+  &-title {
+    font-size: 18px;
+    color: $--color-primary;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+
+  &-date {
+    margin-bottom: 15px;
+    span {
+      margin-right: 20px;
+      b {
+        margin-right: 10px;
+      }
+    }
+	}
+	
+  &-description {
+		text-align: justify;
+		margin-bottom: 10px;
+	}
+	
+  &-details {
+		color: $--color-green;
+		cursor: pointer;
+	}
+
+  &-action {
+		text-align: center;
+	}
+	
+  &-price {
+		color: $--color-green;
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+	
+  &-company {
+		margin-bottom: 10px;
+		font-weight: 700;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 20px;
+		img {
+			width: 40px;
+			height: 40px;
+			border-radius: 30px;
+			overflow: hidden;
+			margin-right: 20px;
+		}
+	}
+	
+	&-status {
+		color: $--color-white;
+		font-size: 10px;
+		padding: 5px;
+		border-radius: 0 5px 0 5px;
+    position: absolute;
+    top: 0;
+		right: 0;
+		&--active {
+			background: $--color-green;
+		}
+		&--evaluating	{
+			background: $--color-warning;
+		}
+		&--finalized  {
+			background: $--color-danger;
+		}
+	}	
+}

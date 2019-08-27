@@ -1,0 +1,85 @@
+
+.detailJob_cont{
+	background-color: $--color-primary;
+	display: flex;
+	justify-content: center;
+}
+.detailJob_head{
+	//quitar
+	//quitar
+	font-size: 14px;
+	min-height: 4em !important;
+	color: white !important;
+	display: flex;
+	align-items: center;
+	& .infoJob {
+		display: flex;
+		flex-direction: column;
+		& span:nth-child(n){
+			margin: 5px 0;
+		}
+		&_title{
+			font-size: 1.5em;
+			font-weight: 600;
+		}&_postulates{
+			font-size: 1.2em;
+		}
+	}
+	& .infoCompany{
+		margin-left: auto;
+		display: flex;
+		flex-direction: column;
+		&_perfilCont{
+			display: flex;
+			& span:nth-child(n){
+				padding: 5px;
+
+			}
+			& .infoCompany_info{
+				display: flex;
+				flex-direction: column;
+				font-weight: 600;
+				font-size: 1em;
+			}
+		}
+	}
+}
+.detailJob_body{
+	display: grid;
+	grid-template-columns: 8fr 2fr;
+	margin: 20px auto;
+	height: 80vh;
+	grid-gap: 50px;
+	& .cardInfo, & .sideInfo{
+		padding: 15px;
+
+	}
+	& .sideInfo{
+		&_header{
+			border-bottom: 1px solid #DCDFE6;
+			padding: 10px;
+		}
+		&_body{
+			& .resumen{
+
+				&_items{
+					margin: 5px 0;
+					&_head{
+						margin-bottom: 5px;
+						display: flex;
+						align-items: center;
+						& div:first-child{
+							padding: 5px;
+						}
+					}
+					&_descrip{
+
+						& span{
+							font-size: .9em;
+						}
+					}
+				}
+			}
+		}
+	}
+}

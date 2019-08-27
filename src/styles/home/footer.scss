@@ -1,0 +1,64 @@
+.footer-cont{
+    padding: 3.5em 0;
+    background: $--color-primary;
+    color: white !important; 
+};
+.footer_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &_text{
+        display: flex;
+        flex-direction: column;
+        & .title{
+            font-size: 1.5em
+        }
+    };
+    &_actions{
+        color: #fff;
+        display: flex;
+        align-items: center;
+        .el-select{
+            width: 140px;
+            & .el-input__inner{
+                color: #fff;
+                
+            }
+            & input{
+                background: transparent;
+                border: solid 1px #fff !important;
+                color: #fff;
+            }
+        };
+        & .icons-cont{
+            margin: 0 15px;
+            i{
+                font-size: 1.5em;
+                padding: 0 10px;
+            }
+        }
+    }   
+}
+.borderline{
+    position: relative;
+    width: inherit;
+    height: 2px;
+    margin: 25px 0;
+    border: solid #fff 1px
+}
+.sitemap{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr ) .5fr;
+    &_col{
+        display: flex;
+        flex-direction: column;
+        flex-direction: column;
+        align-items: self-start;
+        justify-content: flex-start;
+        & a{
+            line-height: 2.2; 
+            color: white   
+        
+        }
+    }
+}
